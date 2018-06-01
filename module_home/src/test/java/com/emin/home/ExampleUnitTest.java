@@ -1,4 +1,4 @@
-package com.emin.module_home;
+package com.emin.home;
 
 import org.junit.Test;
 

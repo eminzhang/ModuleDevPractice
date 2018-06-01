@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">module_voice</string>
+    <string name="app_name">语音组件</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="voice">语音</string>

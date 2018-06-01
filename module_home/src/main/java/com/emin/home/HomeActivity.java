@@ -1,4 +1,4 @@
-package com.emin.module_home;
+package com.emin.home;
 
 import android.os.Bundle;
 import com.alibaba.android.arouter.facade.annotation.Route;

@@ -28,9 +28,11 @@ dependencies {
 
     annotationProcessor deps.arouter_compiler
     implementation project(':common_lib')
-    implementation project(':module_home')
     //且注意，这里每个模块都必须加入进来，不然在router的时候无法找到路径
-    implementation project(':module_voice')
-    implementation project(':module_tel')
-    implementation project(':module_ext')
+    if(!isModule.toBoolean()) {
+        implementation project(':module_home')
+        implementation project(':module_voice')
+        implementation project(':module_tel')
+        implementation project(':module_ext')
+    }
 }

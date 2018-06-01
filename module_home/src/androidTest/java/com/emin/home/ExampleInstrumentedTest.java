@@ -1,4 +1,4 @@
-package com.emin.module_home;
+package com.emin.home;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
