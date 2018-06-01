@@ -1,6 +1,7 @@
 package com.emin.common.base;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
@@ -8,7 +9,12 @@ import com.alibaba.android.arouter.launcher.ARouter;
  * Created by eminzhang    2018/5/28
  */
 public class BaseApplication extends Application {
-    public static final boolean DEBUG = true;
+    private static final boolean DEBUG = true;
+    private static Context mContext;
+
+    public static Context getAppContext(){
+        return mContext;
+    }
     @Override
     public void onCreate() {
         super.onCreate();
@@ -18,5 +24,6 @@ public class BaseApplication extends Application {
             ARouter.openLog();
         }
         ARouter.init(this);
+        mContext = getAppContext();
     }
 }

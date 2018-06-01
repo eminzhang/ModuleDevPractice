@@ -11,7 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="48px"
+        android:textSize="@dimen/text_size"
         android:text="@string/media"/>
+    <Button
+        android:id="@+id/btn_invoke"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="@string/str_invoke_voice_api"
+        android:layout_gravity="center"/>
 
 </FrameLayout>
