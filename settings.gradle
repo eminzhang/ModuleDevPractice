@@ -1,1 +1,1 @@
-include ':app', ':module_home', ':common_lib', ':module_voice', ':module_tel', ':module_ext'
+include ':app', ':module_home', ':module_lib', ':module_voice', ':module_tel', ':module_ext'

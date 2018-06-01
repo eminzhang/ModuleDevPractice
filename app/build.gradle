@@ -27,7 +27,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     annotationProcessor deps.arouter_compiler
-    implementation project(':common_lib')
+    implementation project(':module_lib')
     //且注意，这里每个模块都必须加入进来，不然在router的时候无法找到路径
     if(!isModule.toBoolean()) {
         implementation project(':module_home')
